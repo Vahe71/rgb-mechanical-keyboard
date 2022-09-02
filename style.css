@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 850px;
+    background: url(img/background.jpg) center / cover;
+}
+.keyboard {
+    display: flex;
+    gap: 0 40px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: inset 20px -20px 50px rgba(0, 0, 0, 0.8), inset -20px 20px 50px rgba(255, 255, 255, 0.1);
+}
+.row {
+    display: flex;
+    gap: 0 20px;
+    margin-bottom: 20px;
+}
+.row2 {
+    margin-top: 30px;
+}
+.copyright {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    font: 14px 'Roboto Slab', serif;
+    user-select: none;
+    letter-spacing: 3px;
+}
+.right-panel .row4 {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 90px;
+}
+.row .key {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 7px #222;
+    font: 18px 'Raleway', sans-serif;
+    transition: 0.1s;
+}
+.row .key:active {
+    transform: scale(0.97);
+}
+.row .Escape {margin-right: 50px;}
+.row .Backspace {width: 110px;}
+.row .Tab {width: 80px;}
+.row .Backslash {width: 80px;}
+.row .CapsLock {width: 100px;}
+.row .Enter {width: 130px;}
+.row .ShiftLeft {width: 130px;}
+.row .ShiftRight {width: 170px;}
+.row .Space {width: 530px;}
+.row .F8 {margin-right: 40px;}
+.row .F4 {margin-right: 40px;}
